@@ -1,0 +1,55 @@
+<- Question 1->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+	<title></title>
+</head>
+<body>
+	<form action="display.php" method="POST">
+
+	<h1>Registration form</h1>
+    <div>
+        <label for="name">Name&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="text" name="name" id="name">
+    </div><br>
+    <div>
+        <label for="userName">Username&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="text" name="userName" id="userName">
+    </div><br>
+    <div>
+        <label for="password">Password &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="password" name="password" id="password">
+    </div><br>
+    <div>
+        <label for="re-EnterPassword">Re-enter Password&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="password" name="re-EnterPassword" id="re-EnterPassword">
+    </div><br>
+    <div>
+        <label for="address">Address &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <textarea name="address" id="address" maxlength="200"></textarea>
+    </div><br>
+    <div>
+        <label for="gender">Gender &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="radio" name="gender" value="Male" id="gender">Male
+        <input type="radio" name="gender" value="Female" id="gender">Female
+    </div><br>
+    <div>
+        <label for="districtName">District Name &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <select name="districtName" id="districtName">
+            <option value="Coimbatore">Coimbatore</option>
+        </select>
+    </div><br>
+    <div>
+        <label for="events[]">Events &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;:</label>
+        <input type="checkbox" name="events[]" value="Wedding" id="events[]">Wedding
+        <input type="checkbox" name="events[]" value="Corporate" id="events[]">Corporate
+        <input type="checkbox" name="events[]" value="Social" id="events[]">Social
+    </div><br>
+    <div>
+   		<button type="submit" name="register">Register</button>
+    </div>
+	</form>	
+</body>
+</html>
